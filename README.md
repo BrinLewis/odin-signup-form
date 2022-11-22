@@ -7,4 +7,10 @@ This includes creating the forms themselves with appropriate form controls and s
   
 My styling will involve the use of some pseudo-classes and maybe some pseudo-elements too.  
   
-I also aim to demonstrate a good understanding of form validation.
+I also aim to demonstrate a good understanding of form validation.  
+  
+  
+
+Image credits:
+astronaut with white background - unsplash.com/@adamthehooligan.
+logo - myself.
