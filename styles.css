@@ -11,6 +11,7 @@
 
 body {
   display: flex;
+  background: rgb(233, 229, 220);
 }
 
 .banner {
@@ -18,13 +19,16 @@ body {
   background-size: cover;
   background-position: center;
 
-  width: max(25vw, 170px);
+  width: max(35vw, 170px);
   height: 100vh;
 
   text-align: center;
 
   display: flex;
   flex-direction: column;
+
+  /*Brings banner to front so to avoid overlap with form shadow*/
+  z-index: 1;
 }
 
 .banner-logo {
@@ -70,4 +74,73 @@ body {
 .banner-footer a {
   color: rgb(226, 177, 51);
   text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+.content {
+  font-size: 1.5em;
+}
+
+.hero-text {
+  margin-top: 15vh;
+  padding-left: 5vw;
+  padding-right: 20vw;
+  color: rgb(27, 27, 27);
+  font-weight: 300;
+}
+
+.hero-text p:nth-child(2) {
+  margin-top: 2rem;
+}
+
+.fieldset-wrapper {
+  background-color: rgb(247, 245, 241);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
+  height: 40vh;
+  margin-top: 2rem;
+  padding-left: 5vw;
+  overflow: auto;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  padding-top: 5vh;
+  font-weight: 600;
+}
+
+section {
+  margin-top: 2.5vh;
+  display: flex;
+  gap: 8vw;
+}
+
+label {
+  font-size: 1.2rem;
+  color: rgb(61, 61, 61);
+}
+
+input {
+  appearance: none;
+  border-radius: 5px;
+  border-color: black;
+  width: 250px;
+
+  font-size: 1.3rem;
+
+  padding-left: 0.5em;
+}
+
+input:focus {
+  outline-color: rgb(60, 60, 255);
+}
+
+section div {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset section:last-child {
+  margin-bottom: 5vh;
 }
