@@ -1,1 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+.banner {
+  background-image: url("images/astronaut-edited.jpg");
+  background-size: cover;
+  background-position: center;
+
+  width: max(25vw, 170px);
+  height: 100vh;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-logo {
+  font-family: "Orbitron", "Roboto", sans-serif;
+
+  margin-top: 19vh;
+  background-color: rgba(0, 0, 0, 0.158);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 10px 10px 10px 10px;
+}
+
+.logo-top img {
+  height: max(3.8vw,28px);
+}
+
+.logo-top h1 {
+  font-size: max(3.8vw, 28px);
+}
+
+.banner-logo h2 {
+  font-size: max(0.8vw, 10px);
+}
+
+.logo-top {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+  flex-shrink: 1;
+}
+
+.banner-footer {
+  margin-top: auto;
+  margin-bottom: 1rem;
+  color: rgb(165, 120, 7);
+  text-shadow: 0 0 2px black;
+}
+
+.banner-footer a {
+  color: rgb(226, 177, 51);
+  text-shadow: 0 0 2px rgb(0, 0, 0);
+}
