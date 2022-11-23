@@ -133,7 +133,7 @@ input {
 }
 
 input:focus {
-  outline-color: rgb(60, 60, 255);
+  outline-color: rgb(255, 185, 92);
 }
 
 section div {
@@ -143,4 +143,36 @@ section div {
 
 fieldset section:last-child {
   margin-bottom: 5vh;
+}
+
+button {
+  margin-top: 3vh;
+  margin-left: 5vw;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+
+  appearance: none;
+  border-radius: 8px;
+  border: 2px solid black;
+  background: rgb(255, 185, 92);
+}
+
+button:hover {
+  background: rgb(187, 136, 69);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.content p:nth-child(3) {
+  font-size: 1rem;
+  margin-top: 2vh;
+  padding-left: 5vw;
+}
+
+p a {
+  color: black;
+  text-shadow: 0 0 5px rgb(255, 185, 92);
 }
