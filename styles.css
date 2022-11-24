@@ -110,15 +110,28 @@ legend {
   font-weight: 600;
 }
 
+legend + p {
+  color: rgb(61, 61, 61);
+  font-size: 0.9rem;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+}
+
 section {
-  margin-top: 2.5vh;
   display: flex;
   gap: 8vw;
+}
+
+section:not(.names) {
+  margin-top: 2.5vh;
 }
 
 label {
   font-size: 1.2rem;
   color: rgb(61, 61, 61);
+
+  /*So that the span on password can be absolutely positioned*/
+  position: relative;
 }
 
 input {
@@ -132,8 +145,13 @@ input {
   padding-left: 0.5em;
 }
 
-input:focus {
-  outline-color: rgb(255, 185, 92);
+input:focus:not(:invalid) {
+  outline-color: rgb(142, 245, 82);
+}
+
+input:focus:not(:valid) {
+  outline-color: rgb(196, 38, 59);
+  background-color: rgb(238, 207, 207);
 }
 
 section div {
@@ -143,6 +161,13 @@ section div {
 
 fieldset section:last-child {
   margin-bottom: 5vh;
+}
+
+label span {
+  font-size: 0.7em;
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
 }
 
 button {

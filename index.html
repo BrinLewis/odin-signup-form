@@ -37,25 +37,26 @@
       <div class="fieldset-wrapper">
         <fieldset>
           <legend>Let's do this!</legend>
+          <p>(Required fields are marked with an asterisk *)</p>
           <section class="names">
             <div class="first-name-wrapper">
-              <label for="first-name">First Name</label>
+              <label for="first-name">First Name*</label>
               <input type="text" id="first-name" name="first-name"
-               placeholder="John">
+               placeholder="John" required>
             </div>
 
             <div class="last-name-wrapper">
-              <label for="last-name">Last Name</label>
+              <label for="last-name">Last Name*</label>
               <input type="text" id="last-name" name="last-name"
-               placeholder="Smith">
+               placeholder="Smith" required>
             </div>
 
           </section>
           <section class="contact-details">
             <div class="email-wrapper">
-              <label for="email">Email</label>
+              <label for="email">Email*</label>
               <input type="email" id="email" name="email"
-               placeholder="jsmith@theuniverse.com">
+               placeholder="jsmith@theuniverse.com" required>
             </div>
 
             <div class="number-wrapper">
@@ -65,13 +66,14 @@
           </section>
           <section class="passwords">
             <div class="pw-wrapper">
-              <label for="pw">Password</label>
-              <input type="password" id="pw" name="pw">
+              <label for="pw">Password* <span>(4-12 Characters)</span></label>
+              <input type="password" id="pw" name="pw" required
+               minlength="4" maxlength="12">
             </div>
 
             <div class="confirmpw-wrapper">
-              <label for="confirmpw">Confirm Password</label>
-              <input type="password" id="confirmpw" name="confirmpw">
+              <label for="confirmpw">Confirm Password*</label>
+              <input type="password" id="confirmpw" name="confirmpw" required>
             </div>
           </section>
         </fieldset>
