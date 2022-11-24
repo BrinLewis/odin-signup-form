@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <script src="javascript.js"></script>
+  <script src="javascript.js" defer></script>
   <title>Sign-Up!</title>
 </head>
 
@@ -68,13 +68,15 @@
           <section class="passwords">
             <div class="pw-wrapper">
               <label for="pw">Password* <span>(4-12 Characters)</span></label>
-              <input type="password" id="pw" name="pw" required
+              <input type="password" id="pw" name="pw" class="pw-input" required
                minlength="4" maxlength="12">
+              <span id="pwcheck"></span>
             </div>
 
             <div class="confirmpw-wrapper">
               <label for="confirmpw">Confirm Password*</label>
-              <input type="password" id="confirmpw" name="confirmpw" required>
+              <input type="password" id="confirmpw" name="confirmpw" class="pw-input"
+               required>
             </div>
           </section>
         </fieldset>

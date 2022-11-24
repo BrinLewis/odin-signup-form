@@ -98,6 +98,7 @@ body {
   height: 40vh;
   margin-top: 2rem;
   padding-left: 5vw;
+  padding-bottom: 2vh;
   overflow: auto;
 }
 
@@ -145,11 +146,11 @@ input {
   padding-left: 0.5em;
 }
 
-input:focus:not(:invalid) {
-  outline-color: rgb(142, 245, 82);
+input:focus:valid {
+  outline-color: rgb(98, 168, 57);
 }
 
-input:focus:not(:valid) {
+input:focus:invalid {
   outline-color: rgb(196, 38, 59);
   background-color: rgb(238, 207, 207);
 }
@@ -159,15 +160,17 @@ section div {
   flex-direction: column;
 }
 
-fieldset section:last-child {
-  margin-bottom: 5vh;
-}
-
 label span {
   font-size: 0.7em;
   position: absolute;
   right: 2px;
   bottom: 2px;
+}
+
+#pwcheck {
+  font-size: 1rem;
+  padding-top: 0.7vh;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.233);
 }
 
 button {
